@@ -198,7 +198,7 @@ void GLEngineGLFW::applyWindowSize() {
   // we don't want to just retry until the resize has happened, because it could be impossible
   // TODO it seems like on X11 sometimes even this isn't enough?
   glfwPollEvents();
-  glfwWaitEvents();
+  // glfwWaitEvents();
   // glfwWaitEvents();
   // NSHARP: disabling this ^^^, on macOS it is causing the window to block until it gets focus,
   // and some googling makes me thing the underlying buffers should be resized immediately, which is
